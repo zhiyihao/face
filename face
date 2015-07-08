@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>37岁的大叔</title>
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="description" content=" TyBike" />
+    <link rel="shortcut icon" href="http://42.96.136.122/weixin/attachment/images/global/wechat.jpg" />
+    <link href="http://42.96.136.122/weixin/app/resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://42.96.136.122/weixin/app/resource/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://42.96.136.122/weixin/app/resource/css/animate.css" rel="stylesheet">
+    <link href="http://42.96.136.122/weixin/app/resource/css/common.css" rel="stylesheet">
+    <link href="http://42.96.136.122/weixin/app/index.php?i=1&j=2&c=utility&a=style&" rel="stylesheet">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://42.96.136.122/weixin/app/resource/js/require.js"></script>
+    <script src="http://42.96.136.122/weixin/app/resource/js/app/config.js"></script>
+    <script type="text/javascript" src="http://42.96.136.122/weixin/app/resource/js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        if(navigator.appName == 'Microsoft Internet Explorer'){
+            if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+                //alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+            }
+        }
+        window.sysinfo = {
+            'uniacid': '1',
+            'acid': '2',
+            'siteroot': 'http://42.96.136.122/weixin/',
+            'siteurl': 'http://42.96.136.122/weixin/app/index.php?i=1&j=2&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com',
+            'attachurl': 'http://42.96.136.122/weixin/attachment/',
+            'MODULE_URL': 'http://42.96.136.122/weixin/addons/news/',
+            'cookie' : {'pre': 'b3b8_'}
+        };
+
+        // jssdk config 对象
+        jssdkconfig = null || {};
+
+        // 是否启用调试
+        jssdkconfig.debug = true;
+
+        jssdkconfig.jsApiList = [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+            'translateVoice',
+            'startRecord',
+            'stopRecord',
+            'onRecordEnd',
+            'playVoice',
+            'pauseVoice',
+            'stopVoice',
+            'uploadVoice',
+            'downloadVoice',
+            'chooseImage',
+            'previewImage',
+            'uploadImage',
+            'downloadImage',
+            'getNetworkType',
+            'openLocation',
+            'getLocation',
+            'hideOptionMenu',
+            'showOptionMenu',
+            'closeWindow',
+            'scanQRCode',
+            'chooseWXPay',
+            'openProductSpecificView',
+            'addCard',
+            'chooseCard',
+            'openCard'
+        ];
+
+    </script>
+
+    <script>
+        function _removeHTMLTag(str) {
+            if(typeof str == 'string'){
+                str = str.replace(/<script[^>]*?>[\s\S]*?<\/script>/g,'');
+                str = str.replace(/<style[^>]*?>[\s\S]*?<\/style>/g,'');
+                str = str.replace(/<\/?[^>]*>/g,'');
+                str = str.replace(/\s+/g,'');
+                str = str.replace(/&nbsp;/ig,'');
+            }
+            return str;
+        }
+    </script>
+</head>
+<body>
+<div class="container container-fill">
+    <div id="activity-detail">
+        <style type="text/css">
+            @charset "utf-8";
+            html{background:#FFF;color:#000;}
+            body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+            table{border-collapse:collapse;border-spacing:0;}
+            fieldset, img{border:0;}
+            address, caption, cite, code, dfn,  th, var{font-style:normal;font-weight:normal;}
+            ol, ul{list-style:none;}
+            caption, th{text-align:left;}
+            h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+            q:before, q:after{content:'';}
+            abbr, acronym{border:0;font-variant:normal;}
+            sup{vertical-align:text-top;}
+            sub{vertical-align:text-bottom;}
+            input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+            input, textarea, select{font-size:100%;}
+            legend{color:#000;}
+            html{background-color:#f8f7f5;}
+            body{background:#f8f7f5;color:#222;font-family:Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial;height:100%;position:relative;}
+            body > .tips{display:none;left:50%;padding:20px;position:fixed;text-align:center;top:50%;width:200px;z-index:100;}
+            .page{padding:15px;}
+            .page .page-error, .page .page-loading{line-height:30px;position:relative;text-align:center;}
+
+            #activity-detail .page-bizinfo{border-bottom:2px solid #EEE;}
+            #activity-detail .page-bizinfo .header{padding: 15px 15px 10px; border-bottom:1px solid #CCC;}
+            #activity-detail .page-bizinfo .header #activity-name{color:#000;font-size:20px;font-weight:bold;word-break:normal;word-wrap:break-word;}
+            #activity-detail .page-bizinfo .header #post-date{color:#8c8c8c;font-size:14px;margin:0;}
+            #activity-detail .page-content{padding:15px;}
+            #activity-detail .page-content .media{margin-bottom:18px;}
+            #activity-detail .page-content .media img{width:100%;}
+            #activity-detail .page-content .text{color:#3e3e3e;font-size:1.5;line-height:1.5;width: 100%;overflow: hidden;zoom:1;}
+            #activity-detail .page-content .text p{min-height:1.5em;min-height: 1.5em;word-wrap: break-word;word-break:break-all;}
+            #activity-list .header{font-size:20px;}
+            #activity-list .page-list{border:1px solid #ccc;border-radius:5px;margin:18px 0;overflow:hidden;}
+            #activity-list .page-list .line.btn{border-radius:0;margin:0;text-align:left;}
+            #activity-list .page-list .line.btn .checkbox{height:25px;line-height:25px;padding-left:35px;position:relative;}
+            #activity-list .page-list .line.btn .checkbox .icons{background-color:#ccc;left:0;position:absolute;top:0;}
+            #activity-list .page-list .line.btn.off .icons{background-image:none;}
+            #activity-list #save.btn{background-image:linear-gradient(#22dd22, #009900);background-image:-moz-linear-gradient(#22dd22, #009900);background-image:-ms-linear-gradient(#22dd22, #009900);background-image:-o-linear-gradient(#22dd22, #009900);background-image:-webkit-gradient(linear, left top, left bottom, from(#22dd22), to(#009900));background-image:-webkit-linear-gradient(#22dd22, #009900);}
+            .vm{vertical-align:middle;}
+            .tc{text-align:center;}
+            .db{display:block;}
+            .dib{display:inline-block;}
+            .b{font-weight:700;}
+            .clr{clear:both;}
+            .text img{max-width:100%;}
+            .page-url{padding-top:18px;}
+            .page-url-link{color:#607FA6;font-size:14px;text-decoration:none;text-shadow:0 1px #ffffff;-webkit-text-shadow:0 1px #ffffff;-moz-text-shadow:0 1px #ffffff;}
+            #footer{text-align:center; background-color:#DADADA; border-top:1px solid #B9B9B9;}
+            #footer .copyright{border-top: 1px solid #CACACA;color: #7B7B7B;height: 35px;line-height: 35px;font-size: 12px;}
+            #footer .copyright a{display: block;width: 100%;height: 100%;}
+            #mbutton{padding:15px 10px 15px 10px; overflow:hidden; border-bottom:1px #DDD solid;}
+            #mbutton > span{float:right; display:inline-block; background:#58a3ff; border:1px #63a0eb solid; color:#FFF; height:30px; line-height:30px; padding:0 10px; margin-left:10px;}
+            #mcover{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);display:none;z-index:20000;}
+            #mcover img{position:fixed;right: 18px;top:5px;width:260px;height:180px;z-index:20001;}
+        </style>
+        <div class="page-bizinfo">
+            <div class="header">
+                <h1 id="activity-name">
+                    37岁的大叔
+                    &nbsp;&nbsp;&nbsp;
+
+
+
+                    <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTI1OTc0OA==&mid=207127287&idx=1&sn=8d557187831b6354afcefd16d4e442fb#rd">点这里测试</a>
+
+
+                </h1>
+		<span id="post-date">
+			<span>关注</span>
+			<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTI1OTc0OA==&mid=207127287&idx=1&sn=8d557187831b6354afcefd16d4e442fb#rd">微商时代广场</a>
+			<span>发送照片即可测试</span>
+		</span>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="media">
+                <img onerror="this.parentNode.removeChild(this)" src="http://age.811118.com:8080/wzcx/data_pic/20150708/gh_44641c09cf31_20150708_114605_f96fa3dc294649c79efead43f9b877e0.jpg">
+            </div>
+            <div class="text"> </div>
+        </div>
+    </div>
+    <div id="mbutton">
+
+        <!--
+            <span class="" onclick="$('#mcover').show()"><i class="fa fa-share-alt"></i> 转发</span>
+        -->
+        <span class="" onclick="$('#mcover').show()"><i class="fa fa-group"></i>和好友PK一下</span>
+    </div>
+    <div id="mcover" onclick="$(this).hide()"><img src="./img/guide.png"></div>
+    <div class="text-center footer"
+         style="margin:10px 0; width:100%; text-align:center; word-break:break-all;font-size:50px">
+        <a href=""> </a>
+        &nbsp;&nbsp;
+
+        <a href="http://mp.weixin.qq.com/s?__biz=MzIwMTI1OTc0OA==&mid=207127287&idx=1&sn=8d557187831b6354afcefd16d4e442fb#rd">点这里测试 </a>
+
+
+        &nbsp;&nbsp;
+    </div>
+
+    <div class="text-center footer">
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- aliyun_face -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:320px;height:100px"
+             data-ad-client="ca-pub-6270829003794896"
+             data-ad-slot="7309653596"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+    </div>
+
+    <script>require(['bootstrap']);</script>
+</div>
+<style>
+    h5{color:#555;}
+</style>
+<script type="text/javascript">
+    /*
+     wx.config(jssdkconfig);
+
+     var $_share = {
+     "title":"\u6d3b\u52a8\u8d44\u8baf",
+     "imgUrl":"",
+     "desc":"\u8fd1\u671f\u5c06\u5f00\u5c55\u6d3b\u52a8",
+     "link":"http:\/\/42.96.136.122\/weixin\/app\/index.php?i=1&j=2&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com"
+     };
+
+     if(typeof sharedata == 'undefined'){
+     sharedata = $_share;
+     } else {
+     sharedata['title'] = sharedata['title'] || $_share['title'];
+     sharedata['desc'] = sharedata['desc'] || $_share['desc'];
+     sharedata['link'] = sharedata['link'] || $_share['link'];
+     sharedata['imgUrl'] = sharedata['imgUrl'] || $_share['imgUrl'];
+     }
+
+     function tomedia(src) {
+     if(typeof src != 'string')
+     return '';
+     if(src.indexOf('http://') == 0 || src.indexOf('https://') == 0) {
+     return src;
+     } else if(src.indexOf('../addons') == 0 || src.indexOf('../attachment') == 0) {
+     src=src.substr(3);
+     return window.sysinfo.siteroot + src;
+     } else if(src.indexOf('./resource') == 0) {
+     src=src.substr(2);
+     return window.sysinfo.siteroot + 'app/' + src;
+     } else if(src.indexOf('images/') == 0) {
+     return window.sysinfo.attachurl+ src;
+     }
+     }
+
+     if(sharedata.imgUrl == ''){
+     var _share_img = $('body img:eq(0)').attr("src");
+     if(_share_img == ""){
+     sharedata['imgUrl'] = window.sysinfo.attachurl + 'images/global/wechat_share.png';
+     } else {
+     sharedata['imgUrl'] = tomedia(_share_img);
+     }
+     }
+
+     if(sharedata.desc == ''){
+     var _share_content = _removeHTMLTag($('body').html());
+     if(typeof _share_content == 'string'){
+     sharedata.desc = _share_content.replace($_share['title'], '')
+     }
+     }
+
+     wx.ready(function () {
+     wx.onMenuShareAppMessage(sharedata);
+     wx.onMenuShareTimeline(sharedata);
+     wx.onMenuShareQQ(sharedata);
+     wx.onMenuShareWeibo(sharedata);
+     });
+     */
+
+</script>
+
+<script>
+    require(['jquery'],function(){
+        $(function(){
+            if($('.quick')!=null && $('.quick')!=''){
+                var h = $('.quick').height()+'px';
+                $('body').css("padding-bottom",h);
+            }else{
+                $('body').css("padding-bottom","0");
+            }
+        })
+    });
+</script>
+
+<span style="display:none;">
+	<script src="http://s95.cnzz.com/stat.php?id=4750302&web_id=4750302&show=pic" language="JavaScript"></script>
+</span>
+
+</body>
+
+</html>
